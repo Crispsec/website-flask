@@ -1,0 +1,59 @@
+{
+    "name": "Your Name",
+    "picture": "static/picture.png",
+    "sidebar_content": {
+        "heading": "Chris IJmker",
+        "description": "Personalia"
+    },
+   
+    "Education": [
+        {
+            "skill 1": "subtext",
+            "skill 2": "subtext"
+        }
+    ],
+    "Work Experience": [
+        {
+            "company 1": "subtext",
+            "company 2": "subtext"
+        }
+    ],
+    "Activities": [
+        {
+            "Voorzitter Locatie-Commissie Studievereniging SIM": "Commissie Zoetermeer, leiding in het organiseren van evenementen voor de studievereniging en voorzitten van vergaderingen."
+        }
+    ],
+    "Skills": [
+        { 
+            "Information Security": "Junior Proffesional",
+            "Kali Linux (Tools)": "Intermediate",
+            "Microsoft Office": "Intermediate",
+            "Adobe Photoshop": "Intermediate",
+            "Blender": "Intermediate",
+            "Video Editing (Sony Vegas Pro)": "Intermediate",
+            "Unity": "Beginner",
+            "Audio Editing and Mixing": "Beginner",
+            "Microsoft Windows": "Experienced"
+        }
+    ],
+    "Programming Languages": [
+        {
+            "HTML": "Intermediate",
+            "CSS": "Intermediate",
+            "Java": "Beginner/Intermediate",
+            "Python": "Intermediate/Advanced",
+            "Flask": "Intermediate",
+            "Rust": "Learning"
+        }
+    ],
+    "Languages": [
+        {
+            "Dutch": "Native",
+            "Englisch": "Advanced",
+            "French": "Can Understand",
+            "German": "Can Understand"
+
+        }
+    ]
+
+}

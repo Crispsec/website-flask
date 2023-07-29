@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Resume Website</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <!-- Add your picture here -->
+      <div id="profile-picture"></div>
+
+      <!-- Sidebar content will be dynamically generated -->
+      <div id="sidebar-content">
+        <h2>{{ data.sidebar_content.heading }}</h2>
+        <p>{{ data.sidebar_content.description }}</p>
+      </div>
+    </div>
+    <div id="maincontent">
+      <!-- Main content will be dynamically generated -->
+      <div id="main-content">
+        <h1>{{ data.name }}</h1>
+
+        <!-- Loop through each section in the JSON data -->
+        {% for section, subsections in data.items() if section not in ['name', 'picture', 'sidebar_content'] %}
+          <h2>{{ section }}</h2>
+          {% for subsection, subtext in subsections[0].items() %}
+            <div class="title">{{ subsection }}</div>
+            <div class="subtext">{{ subtext }}</div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

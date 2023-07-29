@@ -1,0 +1,30 @@
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  #container {
+    display: flex;
+    height: 100vh;
+  }
+  #sidebar {
+    flex: 0 0 25%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  #profile-picture {
+    width: 250px; 
+    height: 250px;
+    background-image: url('/static/picture.png'); 
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+  }
+  #maincontent {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }

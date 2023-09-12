@@ -26,13 +26,15 @@
         <!-- Loop through each section in the JSON data -->
         {% for section, subsections in data.items() if section not in ['name', 'picture', 'sidebar_content'] %}
           <h2>{{ section }}</h2>
-          {% for subsection, subtext in subsections[0].items() %}
-            <div class="title">{{ subsection }}</div>
-            <div class="subtext">{{ subtext }}</div>
-          {% endfor %}
+          <div class="subsection-container">
+            {% for subsection, subtext in subsections[0].items() %}
+              <div class="subsection">
+                <div class="title">{{ subsection }}</div>
+                <div class="subtext">{{ subtext }}</div>
+              </div>
+            {% endfor %}
+          </div>
         {% endfor %}
-      </div>
-    </div>
-  </div>
+        </div>
 </body>
 </html>
